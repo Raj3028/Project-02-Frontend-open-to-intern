@@ -7,7 +7,7 @@ const { valid, regForName, regForFullName, regForEmail, regForMobileNo } = requi
 
 //===================== This function is used for Creating an Intern =====================//
 const createIntern = async function (req, res) {
-
+    res.setHeader('Access-Control-Allow-Origin', '*')
     try {
         let data = req.body
 
